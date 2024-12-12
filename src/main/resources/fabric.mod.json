@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "actionchat",
+	"version": "${version}",
+	"name": "ActionChat",
+	"description": "Automatically sends customizable chat messages for actions like sleeping or joining!",
+	"authors": [
+		"Emn4tor", "lil aleks"
+	],
+	"contact": {
+		"homepage": "https://emn4tor.de",
+		"sources": "https://github.com/emn4tor/ActionChat"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/actionchat/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"de.emn4tor.ActionChat"
+		]
+	},
+	"mixins": [
+		"actionchat.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
